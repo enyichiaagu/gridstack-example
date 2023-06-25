@@ -5,12 +5,16 @@ const serializedData = [
 ]
 
 const options = {
+	alwaysShowResizeHandle: true,
+	animate: false,
+	removable: true,
 	styleInHead: false,
 	margin: 5,
+	children: serializedData,
 	resizable: {
 		handles: 'e, se, s, sw, w'
 	}
 }
 
 const grid = GridStack.init(options)
-grid.load(serializedData)
+// grid.load(serializedData)
