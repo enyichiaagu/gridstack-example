@@ -2,7 +2,7 @@
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
-	border: 1px solid red;
+	/* border: 1px solid red; */
 	font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -80,4 +80,81 @@ main {
 
 h2 {
 	margin-bottom: 2rem;
+}
+
+.grid-stack-item-content {
+	cursor: grab;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	background-color: #f7f7f7;
+	border-radius: 0.5rem;
+	padding: 1rem;
+	box-shadow: 0 1px 3px #0000001f, 0 1px 2px #0000003d;
+}
+
+.revenue {
+	color: #fbfbff;
+	background-color: #1023cc;
+}
+
+.customer-overview {
+	color: #660f7c;
+}
+
+.growth {
+	background-color: #e3eeea;
+	color: #008000;
+}
+
+.description {
+	text-align: center;
+	margin: 1rem 0 0.3rem;
+}
+
+.metric-value {
+	font-size: 2.2rem;
+	text-align: center;
+}
+
+.metric-value.profit i {
+	color: #008000;
+}
+
+.transactions-overview {
+	color: #660f7c;
+}
+
+table {
+	margin: 1rem 0;
+	width: 100%;
+	border-collapse: collapse;
+}
+
+th,
+td {
+	padding: 0.4rem 0;
+	border-bottom: 1px solid #e6e6e6;
+}
+
+tr:nth-child(even) {
+	background-color: #eeeef7;
+}
+
+thead th {
+	font-weight: normal;
+	text-align: left;
+}
+
+.top-customers ul {
+	list-style: none;
+}
+
+.top-customers ul li {
+	text-align: center;
+	margin: 0.2rem 0;
+}
+
+.top-customers ul li i {
+	color: goldenrod;
 }

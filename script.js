@@ -1,5 +1,5 @@
 const options = {
-	cellHeight: '10em',
+	cellHeight: '11rem',
 	maxRow: 3
 }
 
