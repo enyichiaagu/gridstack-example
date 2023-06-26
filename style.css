@@ -8,23 +8,36 @@
 
 .body-content {
 	display: flex;
-	background-color: #e6e6e6;
+	background-color: #f7f7f7;
 }
 
 aside {
 	width: 15rem;
 	height: 100vh;
-	background-color: #f7f7f7;
+	display: flex;
+	flex-direction: column;
+}
+
+aside .logout-bar {
+	margin-top: auto;
+	padding: 1rem;
+	border-top: 1px solid #e6e6e6;
 }
 
 aside ul {
-	padding: 1rem;
+	padding: 0.5rem;
 	list-style: none;
 }
 
 aside ul li {
 	margin: 0.5rem 0;
-	padding: 0.5rem 1rem;
+	padding: 1rem 1.5rem;
+}
+
+aside ul li.active {
+	border-radius: 0.5rem;
+	color: #e6e6e6;
+	background-color: black;
 }
 
 .app-name {
@@ -34,18 +47,37 @@ aside ul li {
 	color: #0b5e85;
 }
 
+header {
+	padding: 1rem;
+	display: flex;
+	justify-content: flex-end;
+}
+
+.avatar {
+	font-size: 0.7rem;
+	text-align: center;
+	display: inline-block;
+	width: 1.2rem;
+	height: 1.2rem;
+	line-height: 1.2rem;
+	border-radius: 50%;
+	background-color: #0b5e85;
+	color: #f7f7f7;
+}
+
+.overview {
+	flex-grow: 1;
+	display: flex;
+	flex-direction: column;
+}
+
 main {
+	background-color: #e6e6e6;
+	border-top-left-radius: 2rem;
+	padding: 2rem;
 	flex-grow: 1;
 }
 
-/* .grid-stack {
-	background-color: yellow;
+h2 {
+	margin-bottom: 2rem;
 }
-
-.grid-stack-item-content {
-	color: #2c3e50;
-	text-align: center;
-	background-color: #18bc9c;
-	border-radius: 10px;
-	box-shadow: 0 3px 10px;
-} */
